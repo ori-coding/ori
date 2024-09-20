@@ -59,10 +59,7 @@
 | :-: | :-: | :-: | :--: |
 | **week01**  | 백준 | [상어 초등학교](https://www.acmicpc.net/problem/21608) | 골드 5 |
 | **week02**  | 백준 | [로봇 청소기](https://www.acmicpc.net/problem/14503) | 골드 5 |
-
-
-
-
+| **week03**  | 백준 | [구슬 탈출](https://www.acmicpc.net/problem/13459) | 골드 1 |
 
 
 
