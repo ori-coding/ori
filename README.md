@@ -55,11 +55,12 @@
 
 ### ✍️ Problems
 
-|     | 분류 | 문제 | 난이도 |
-| :-: | :-: | :-: | :--: |
-| **week01**  | 백준 | [상어 초등학교](https://www.acmicpc.net/problem/21608) | 골드 5 |
-| **week02**  | 백준 | [로봇 청소기](https://www.acmicpc.net/problem/14503) | 골드 5 |
-| **week03**  | 백준 | [구슬 탈출](https://www.acmicpc.net/problem/13459) | 골드 1 |
+|     | 분류 | 플랫폼 | 문제 | 난이도 |
+| :-: | :-: | :-: | :-: | :--: |
+| **week01**  | 구현 | 백준 | [상어 초등학교](https://www.acmicpc.net/problem/21608) | 골드 5 |
+| **week02**  | 구현 | 백준 | [로봇 청소기](https://www.acmicpc.net/problem/14503) | 골드 5 |
+| **week03**  | 구현 | 백준 | [구슬 탈출](https://www.acmicpc.net/problem/13459) | 골드 1 |
+| **week04**  | 이분탐색 | 백준 | [서버실](https://www.acmicpc.net/problem/17245) | 실버 2 |
 
 
 
