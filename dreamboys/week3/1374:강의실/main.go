@@ -1,9 +1,13 @@
 package main
 
 import (
+	"bufio"
 	"container/heap"
 	"fmt"
+	"os"
 	"sort"
+	"strconv"
+	"strings"
 )
 
 // Minheap strcut 및 heap.Interface 구현
@@ -50,12 +54,26 @@ type Lecture struct {
 	start, end int
 }
 
+// bufio, fmt는 입출력을 처리할 때 사용되는데,
+// fmt : 버퍼링이 없어서 큰 입력을 다룰 때 성능이 떨어질 수 있고, 출력할 때 마다 바로 처리
+// 버퍼링 : 데이터를 임시로 메모리의 특정 공간인 버퍼에 저장한 뒤, 한번에 입출력 수행.
+// bufio : 버퍼링을 통해 입출력 성능을 개선할 수 있는 기능 제공. 입력과 출력을 메모리 버퍼에 저장한 후, 한번에 처리
+
+var reader *bufio.Reader = bufio.NewReader(os.Stdin)
+var writer *bufio.Writer = bufio.NewWriter(os.Stdout)
+
 func main() {
 
-	var n int
+	//var n int
 	// fmt.Scan : 표준 입력에서 공백, 탭, 줄 바꿈 등의 구분자로 값을 읽어옴
 	// 입력값이 n 변수에 저장
-	fmt.Scan(&n)
+	//fmt.Scan(&n)
+
+	defer writer.Flush()
+
+	// 첫 줄 입력 : 강의 개수 n
+	line, _ := reader.ReadString('\n')
+	n, _ := strconv.Atoi(strings.TrimSpace(line))
 
 	lectures := make([]Lecture, n)
 	for i := 0; i < n; i++ {
@@ -88,7 +106,7 @@ func main() {
 
 	// 	힙의 크기가 필요한 최소 강의실 수
 
-	// fmt.Println("정답 :::")
-	fmt.Println(len(*classrooms))
+	// 힙의 크기가 필요한 최소 강의실 수
+	fmt.Fprintln(writer, len(*classrooms))
 
 }
