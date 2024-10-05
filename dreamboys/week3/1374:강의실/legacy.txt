@@ -1,0 +1,46 @@
+// // 표준 입력에서 데이터를 받기 위한 스캐너 설정
+// reader := bufio.NewReader(os.Stdin)
+
+// // 첫 번째 줄 : 입력 받기
+// fmt.Println("입력 :")
+// input, _ := reader.ReadString('\n')
+// // strings.TrimSpace() : 문자열 앞뒤에 있는 공백 문자 (스페이스, 탭, 줄 바꿈) 제거
+// // strconv.Atoi() : 문자열 => 정수
+// n, _ := strconv.Atoi(strings.TrimSpace(input))
+
+// // 오리지날
+
+// // 2차원 배열 생성
+// data := make([][3]int, n)
+
+// for i := 0; i < n; i++ {
+// 	// 각 줄 읽기 (예 : 6 15 21)
+// 	line, _ := reader.ReadString('\n')
+
+// 	// 주어진 문자열을 공백을 기준으로 분리하여 문자열 슬라이스 반환
+// 	numbers := strings.Fields(line)
+
+// 	// 각 줄의 데이터를 [3]int 배열로 변환하여 저장
+// 	for j := 0; j < 3; j++ {
+// 		data[i][j], _ = strconv.Atoi(numbers[j])
+// 	}
+// }
+
+// // 1. 시작시간 순으로 정렬 (2차원 배열을 두 번째 요소를 기준으로 오름차순 정렬)
+// // sort.Slice : 슬라이스 정렬 함수, 비교 함수를 사용해 두 요소의 순서 정의
+// // func(i,j int) bool : 슬라이스 내 두 요소를 비교해 참이면 i가 앞으로 정렬, 거짓이면 j가 앞으로
+// sort.Slice(data, func(i, j int) bool {
+
+// 	if data[i][1] == data[j][1] {
+// 		return data[i][2] < data[j][2]
+// 	}
+
+// 	return data[i][1] < data[j][1]
+// })
+
+// // 2.
+
+// fmt.Println("저장된 배열 : ")
+// for _, arr := range data {
+// 	fmt.Println(arr)
+// }
