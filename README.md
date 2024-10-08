@@ -61,6 +61,7 @@
 | **week02**  | 구현 | 백준 | [로봇 청소기](https://www.acmicpc.net/problem/14503) | 골드 5 |
 | **week03**  | 구현 | 백준 | [구슬 탈출](https://www.acmicpc.net/problem/13459) | 골드 1 |
 | **week04**  | 이분탐색 | 백준 | [서버실](https://www.acmicpc.net/problem/17245) | 실버 2 |
+| **week05**  | 분할정복 | 백준 | [Z](https://www.acmicpc.net/problem/1074) | 골드 5 |
 
 
 
