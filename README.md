@@ -62,6 +62,7 @@
 | **week03**  | 구현 | 백준 | [구슬 탈출](https://www.acmicpc.net/problem/13459) | 골드 1 |
 | **week04**  | 이분탐색 | 백준 | [서버실](https://www.acmicpc.net/problem/17245) | 실버 2 |
 | **week05**  | 분할정복 | 백준 | [Z](https://www.acmicpc.net/problem/1074) | 골드 5 |
+| **week06**  | DP | 백준 | [내리막 길](https://www.acmicpc.net/problem/1520) | 골드 3 |
 
 
 
